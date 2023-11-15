@@ -481,7 +481,7 @@ button {
     .textarea p {
         margin: 0;
         font-size: 3vh;
-        width: vw;
+        width: 58vw;
     }
     
     .textarea::-webkit-scrollbar {
