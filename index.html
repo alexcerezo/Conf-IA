@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Info verifier</title>
+        <link rel="icon" href="img/logo.ico" type="image/ico" />
+        <script src="http://kit.fontawesome.com/fefecd0a89.js" crossorigin="anonymous"></script>
+        <script src="script.js" ></script>
+    </head>
+    <body>
+        <div class="container">
+          <div class="main">
+            <div class="header">
+              <h1>Info verifier</h1>
+              <div class="menu">
+                  <h3 onclick="showOperation1()">About me</h3>
+                  <h3 onclick="showOperation2()">Projects</h3>
+                  <h3 onclick="showOperation3()">Posts</h3>
+                  <h3 onclick="showOperation4()">Contact</h3>
+              </div>
+              <a class="bars" onclick="showMenu()" ><i class="fa fa-bars fa-2x"></i></a>
+          </div>
+          <div class="sections" onmouseover="hideMenu()">
+            <div class="left">
+              <h2>Paste your text</h2>
+              <textarea  type="textarea" placeholder="Text here!" id="prompt"></textarea>
+              <button id="generate">Verify</button>
+            </div>
+            <div class="right">
+              <h2>Result</h2>
+              <textarea id="output" type="textarea" placeholder="Result will be here">
+              </textarea>
+              <div class="social">
+                <div class="icons">
+                    <a class="icon" href="https://www.linkedin.com/in/alexcerezocontreras" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a class="icon" href="https://github.com/alexcerezo" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a class="icon" href="https://www.instagram.com/alexcerezx" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+            </div>
+
+          </div>
+            
+          </div>
+            
+            <div class="sphere"></div>
+            <div class="sphere2"></div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
+

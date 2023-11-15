@@ -1,0 +1,429 @@
+:root {
+    --start-color: rgba(2,0,36,1);
+    --end-color: rgb(14, 79, 97);
+  }
+
+body {
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --gradient-start: var(--start-color);
+  --gradient-end: var(--end-color);
+    background: linear-gradient(
+      135deg,
+      var(--gradient-start),
+      var(--gradient-end)
+    );
+    animation-duration: 10s;
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 80vh;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50px;
+    z-index: 3; /* Updated z-index */
+    position: relative; /* Added position */
+    backdrop-filter: blur(10px);
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 60vw;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: 5vh;
+}
+.bars {
+    display: none;
+}
+
+h3 {
+    margin: 0.5vh;
+}
+
+h3:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sections {
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.icons {
+    /*make this div be below the previous one in refering height*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1vh;
+    width: 19vh;
+    margin-left:4vh;
+    margin-right:4vh;
+
+}
+
+.icon {
+    color: white;
+    text-decoration: none;
+}
+
+.icons:hover > .icon {
+    opacity: 0.3;
+    transition: 0.3s;
+}
+
+.icons:hover > .icon:hover {
+    opacity: 1;
+}
+
+.sphere {
+    display: block;
+    position: absolute;
+    width: 20vh;
+    height: 20vh;
+    background: linear-gradient(135deg, rgba(233,37,206,1) 0%, rgba(173,25,222,1) 50%, rgba(132,9,185,1) 75%, rgba(27,0,77,1) 100%);
+    z-index: -10;
+    border-radius: 100px 100px 100px 100px;
+    margin-left: -80vw; 
+    margin-bottom: -75vh;
+    animation-duration: 120s;
+    animation-name: sphere;
+    animation-iteration-count: infinite;
+}
+
+
+.sphere2 {
+    display: block;
+    position: absolute;
+    align-self: bottom;
+    justify-self: right;
+    width: 20vh;
+    height: 20vh;
+    background: linear-gradient(135deg, rgba(99,37,233,1) 0%, rgba(41,25,222,1) 50%, rgba(11,9,185,1) 75%, rgba(0,9,77,1) 100%);
+    z-index: -20;
+    border-radius: 100px 100px 100px 100px;
+    margin-left: 80vw; 
+    margin-bottom: 75vh;
+    animation-duration: 120s;
+    animation-name: sphere2;
+    animation-iteration-count: infinite;
+}
+
+textarea {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    height: 30vh;
+    width: 30vw;
+    margin: 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    resize: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+textarea::placeholder { color: rgba(255, 255, 255, 0.20); }
+
+button {
+    height: 5vh;
+    width: 30vw;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    align-items: center;
+    font-weight: 500;
+    --gradient-start: var(--start-color);
+    --gradient-end: var(--end-color);
+    background: linear-gradient(
+      135deg,
+      var(--gradient-start),
+      var(--gradient-end)
+    );
+    animation-duration: 10s;
+    animation-name: fondo;
+    animation-iteration-count: infinite;
+}
+
+h3
+{
+    text-decoration: none;
+    font-size: 14px;
+    margin: 1vh;
+    padding-left: 1vh   ;
+    font-weight: 500;
+}
+
+h3:hover {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+
+@property --gradient-start {
+    syntax: "<color>";
+    initial-value: transparent;
+    inherits: false;
+}
+
+@property --gradient-end {
+    syntax: "<color>";
+    initial-value: transparent;
+    inherits: false;
+}
+
+@keyframes fondo {
+    from {
+        --gradient-start: var(--start-color);
+        --gradient-end: var(--end-color);
+    }
+  
+    50% {
+        --gradient-start: var(--end-color);
+        --gradient-end: var(--start-color);
+        
+    }
+  
+    to {
+        --gradient-start: var(--start-color);
+        --gradient-end: var(--end-color);
+    }
+  }
+
+  @keyframes fondo2 {
+    from {
+        --gradient-start: var(--start-color);
+        --gradient-end: var(--end-color);
+    }
+  
+    50% {
+        --gradient-start: var(--end-color);
+        --gradient-end: var(--start-color);
+        
+    }
+  
+    to {
+        --gradient-start: var(--start-color);
+        --gradient-end: var(--end-color);
+    }
+  }
+
+
+@keyframes sphere {
+    from {
+        margin-left: -80vw; 
+        margin-bottom:-75vh;
+        border-radius: 33% 67% 55% 45% / 48% 50% 50% 52% ;
+    }
+
+    25%  {
+        margin-left: 80vw; 
+        margin-bottom: -75vh;
+        border-radius: 38% 62% 60% 40% / 56% 66% 34% 44% ;
+    }
+
+    50% {
+        margin-left: 80vw; 
+        margin-bottom: 75vh;
+        border-radius: 62% 38% 37% 63% / 57% 66% 34% 43% ;
+    }
+
+    75% {
+        margin-left: -80vw; 
+        margin-bottom: 75vh;
+        border-radius: 60% 40% 32% 68% / 43% 54% 46% 57% ;
+    }
+
+    to {
+        margin-left: -80vw; 
+        margin-bottom:-75vh;
+        border-radius: 33% 67% 55% 45% / 48% 50% 50% 52%  ;
+
+    }
+}
+
+@keyframes sphere2 {
+    from {
+        margin-left: 80vw; 
+        margin-bottom: 75vh;
+        border-radius: 62% 38% 37% 63% / 57% 66% 34% 43% ;
+
+    }
+
+    25%  {
+        margin-left: -80vw; 
+        margin-bottom: 75vh;
+        border-radius: 60% 40% 32% 68% / 43% 54% 46% 57% ;
+    }
+
+    50% {
+        margin-left: -80vw; 
+        margin-bottom:-75vh;
+        border-radius: 33% 67% 55% 45% / 48% 50% 50% 52% ;
+
+    }
+
+    75% {
+        margin-left: 80vw; 
+        margin-bottom: -75vh;
+        border-radius: 38% 62% 60% 40% / 56% 66% 34% 44% ;
+    }
+
+    to {
+        margin-left: 80vw; 
+        margin-bottom: 75vh;
+        border-radius: 62% 38% 37% 63% / 57% 66% 34% 43% ;
+        
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .main {
+        display: flex;
+        justify-content: center;
+        width: 80vw;
+        height: 80vh;
+        align-items: center;
+        align-content:flex-start;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.15);
+        border-radius: 50px;
+        z-index: 3; /* Updated z-index */
+        position: relative; /* Added position */
+        backdrop-filter: blur(10px);
+    }
+
+    .sections {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+        margin: 3vh;
+    }
+
+    .sections::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+      }
+      
+      .sections::-webkit-scrollbar-thumb {
+        background-color: rgb(186, 186, 186);
+        border-radius: 5px;
+      }
+      
+      .sections::-webkit-scrollbar-track {
+        background-color: transparent;
+      }
+
+    textarea {
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.15);
+        height: 30vh;
+        width: 50vw;
+        margin: 20px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        color: white;
+        resize: none;
+    }
+
+    .sphere {
+        display:none;
+    }
+    
+    .sphere2 {
+        display: none;
+    }
+
+   .bars {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    display: none;
+    z-index: 10;
+    flex-direction: column;
+    text-align: right;
+    height: 5vh;
+    width: 30%;
+
+}
+
+h3 {
+    margin: 0.5vh;
+}
+
+h1 {
+    font-size:x-larger;
+}
+
+    
+
+    
+
+
+    
+}
