@@ -13,23 +13,27 @@
             <div class="header">
               <h1>Conf-IA</h1>
               <div class="menu">
-                  <h3 onclick="showOperation1()">About me</h3>
-                  <h3 onclick="showOperation2()">Projects</h3>
-                  <h3 onclick="showOperation3()">Posts</h3>
-                  <h3 onclick="showOperation4()">Contact</h3>
+                <a class="bars" onclick="showMenu(); startTimer()"><i class="fa fa-bars fa-2x"></i></a>
+                <div class="submenu" onmouseover="resetTimer()" onmouseout="startTimer()">
+                  <h3>About me</h3>
+                  <h3>Projects</h3>
+                  <h3>Contact</h3>
               </div>
-              <a class="bars" onclick="showMenu()" ><i class="fa fa-bars fa-2x"></i></a>
+              </div>
           </div>
-          <div class="sections" onmouseover="hideMenu()">
+          <div class="sections">
             <div class="left">
               <h2>Paste your text</h2>
-              <textarea  type="textarea" placeholder="Text here!" id="prompt"></textarea>
+              <div class="textarea">
+                <textarea type="textarea" placeholder="Text here!" id="prompt"></textarea>
+              </div>
               <button id="generate">Verify</button>
             </div>
             <div class="right">
               <h2>Result</h2>
-              <textarea id="output" type="textarea" placeholder="Result will be here">
-              </textarea>
+              <div class="textarea">
+                <p id="output"></p>
+              </div>
               <div class="social">
                 <div class="icons">
                     <a class="icon" href="https://www.linkedin.com/in/alexcerezocontreras" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
