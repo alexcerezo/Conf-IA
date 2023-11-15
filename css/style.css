@@ -419,11 +419,10 @@ h3 {
 h1 {
     font-size:x-larger;
 }
+}
 
-    
-
-    
-
-
-    
+@media screen and (min-width: 1000px) {
+    .menu {
+        display:flex;
+    }
 }
