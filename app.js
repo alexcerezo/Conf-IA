@@ -1,4 +1,4 @@
-const API_KEY = "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";
+const API_KEY = "API KEY HERE";
 
 async function getCompletion(prompt) {
   const response = await fetch(`https://api.openai.com/v1/chat/completions`, {
