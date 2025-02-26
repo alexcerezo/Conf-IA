@@ -1,8 +1,8 @@
 # Conf-IA - Fact-Checking con Inteligencia Artificial
 
+![Image](https://i.imgur.com/G8zJnhA.png)
 
-
-Conf-IA es una extensión de Chrome diseñada para verificar la veracidad de la información en tiempo real utilizando inteligencia artificial. Con esta herramienta, los usuarios pueden identificar noticias falsas, detectar posibles sesgos y acceder a fuentes confiables de manera rápida y sencilla.
+Conf-IA es una web diseñada para verificar la veracidad de la información en tiempo real utilizando inteligencia artificial. Con esta herramienta, los usuarios pueden identificar noticias falsas, detectar posibles sesgos y acceder a fuentes confiables de manera rápida y sencilla.
 
 ## 🚀 Características
 
@@ -12,27 +12,9 @@ Conf-IA es una extensión de Chrome diseñada para verificar la veracidad de la 
 - **Interfaz intuitiva**: Fácil de usar y accesible directamente desde el navegador.
 - **Privacidad garantizada**: No almacena datos personales ni rastrea tu actividad en línea.
 
-## 📌 Instalación
-
-1. Descarga el repositorio:
-   ```bash
-   git clone https://github.com/tuusuario/conf-ia.git
-   ```
-2. Abre Google Chrome y ve a `chrome://extensions/`.
-3. Activa el "Modo desarrollador" en la esquina superior derecha.
-4. Haz clic en "Cargar extensión sin empaquetar" y selecciona la carpeta del proyecto.
-
-## 🛠️ Uso
-
-1. Accede a cualquier página web.
-2. Haz clic en el icono de la extensión Conf-IA.
-3. La IA analizará el contenido y mostrará un informe con su evaluación.
-4. Si se detecta información dudosa, se mostrarán fuentes alternativas confiables.
-
 ## 📚 Tecnologías Utilizadas
 
 - **JavaScript** (para la lógica principal)
-- **Chrome Extensions API** (para la integración con el navegador)
 - **Modelos de IA** (ChatGPT API)
 
 ## 🏗️ Contribuir
